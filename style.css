@@ -13,7 +13,6 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
-    /* background-image: url("logo/logo.png"); */
 }
 
 .header {
@@ -30,12 +29,11 @@ body {
 .left {
     position: relative;
     background-color: red;
-    min-width: 33%;
+    width: 33vw;
     background-image: url("img1.jpg");
 }
 
 .right {
-    /* padding: 30px; */
     background-color: hsl(0, 13%, 94%)
 }
 
@@ -47,9 +45,9 @@ body {
     padding: 10px;
     position: absolute;
     top: 30vh;
-    /* outline: 5px solid orange; */
+    outline: 5px solid orange;
     display: flex;
-    /* max-width: 100%; */
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.3)
@@ -57,7 +55,7 @@ body {
 
 .name-logo > h1 {
     font-family: cyberpunkFont;
-    flex-wrap: wrap;
+    padding: 0;
     margin: 10px;
     color: white;
 }
@@ -68,10 +66,8 @@ form > h1 {
 }
 
 .form-block {
-    /* padding: 10px; */
     position: absolute;
     top: 45vh;
-    /* outline: 5px solid orange; */
     min-width: 67%;
     background-color: white;
     box-shadow: 5px 18px 25px 1px rgba(66, 68, 90, 1);
@@ -98,6 +94,18 @@ input {
     display: flex;
 }
 
-form {
+button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
   
+}
+
+.button {
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 30px;
 }
