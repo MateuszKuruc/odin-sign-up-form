@@ -45,7 +45,6 @@ body {
     padding: 10px;
     position: absolute;
     top: 30vh;
-    outline: 5px solid orange;
     display: flex;
     max-width: 100%;
     justify-content: center;
