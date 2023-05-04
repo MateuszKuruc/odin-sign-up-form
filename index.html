@@ -30,26 +30,26 @@
         <div class="columns">
             <div class="col1">
               <label for="first_name">FIRST NAME 
-                <input type="text" id="first_name" name="first_name" />
+                <input type="text" id="first_name" name="first_name" required />
               </label>
               
               <label for="email">EMAIL
-                <input type="email" id="email" name="email" />
-              </label>
+                <input type="email" id="email" name="email" placeholder="johndoe@company.com" required />
+            </label>
               
               <label for="password">PASSWORD
-                <input type="password" id="password" name="password" />
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="min 8 characters" required />
               </label>
               
             </div>
             <div class="col2">
               <label for="last_name">LAST NAME 
-                <input type="text" id="last_name" name="last_name" />
+                <input type="text" id="last_name" name="last_name" required />
               </label>
               
               
               <label for="phone">PHONE NUMBER 
-                <input type="tel" id="phone" name="phone" />
+                <input type="tel" id="phone" name="phone" placeholder='xxx-xxx-xxx' required />
               </label>
               
               <label for="confirm_password">CONFIRM PASSWORD 
@@ -57,21 +57,27 @@
                 type="password"
                 id="confirm_password"
                 name="confirm_password"
+                required
               />
               </label>
               
             </div>
                   </div>
                   <div class="button">
-                      <button type="submit">Create account</button>
+                      <button id="submitButton" type="submit">Create account</button>
                       <p>Already have an account? Please <a href="#">log in</a>.</p>
                   </div>
+                  <div id="matchError"></div>
+                  <div id="ruleError"></div>
+                  <div id="success"></div>
         </div>
         
     </form>
-    
+
+
     </div>
 
     <!-- <a href="https://www.freepik.com/free-photo/bright-blue-purple-abstract-background-with-glowing-line-light_40262590.htm#query=neon&position=8&from_view=search&track=sph">Image by Sketchepedia</a> on Freepik -->
-  </body>
+<script src="script.js"></script>  
+</body>
 </html>
