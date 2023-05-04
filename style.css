@@ -1,110 +1,111 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @font-face {
-    font-family: cyberpunkFont;
-    src: url(/Cyberpunk/Cyberpunk.otf);
+  font-family: cyberpunkFont;
+  src: url(/Cyberpunk/Cyberpunk.otf);
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100vh;
 }
 
 .header {
-    font-size: 14px;
-    position: absolute;
-   top: 20vh;
-   padding: 10px;
-   padding-right: 25vh;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    min-width: 66%;
+  font-size: 14px;
+  position: absolute;
+  top: 20vh;
+  padding: 10px;
+  padding-right: 25vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 66%;
 }
 
 .left {
-    position: relative;
-    background-color: red;
-    width: 33vw;
-    background-image: url("img1.jpg");
-    min-width: 33vw;
+  position: relative;
+  background-color: red;
+  width: 33vw;
+  background-image: url("img1.jpg");
+  min-width: 33vw;
 }
 
 .right {
-    background-color: hsl(0, 13%, 94%);
-    min-width: 67vw;
-    position: relative;
+  background-color: hsl(0, 13%, 94%);
+  min-width: 67vw;
+  position: relative;
 }
 
 .name-logo > img {
-    max-width: 33%;
+  max-width: 33%;
 }
 
 .name-logo {
-    padding: 10px;
-    position: absolute;
-    top: 30vh;
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0, 0.3)
+  padding: 10px;
+  position: absolute;
+  top: 30vh;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 .name-logo > h1 {
-    font-family: cyberpunkFont;
-    padding: 0;
-    margin: 10px;
-    color: white;
+  font-family: cyberpunkFont;
+  padding: 0;
+  margin: 10px;
+  color: white;
 }
 
 form > h1 {
-    padding: 16px;
-    padding-left: 30px
+  padding: 16px;
+  padding-left: 30px;
 }
 
 .form-block {
-    position: relative;
-    top: 45vh;
-    height: 30vh;
-    min-width: 67%;
-    background-color: white;
-    box-shadow: 5px 18px 25px 1px rgba(66, 68, 90, 1);
+  position: relative;
+  top: 45vh;
+  height: 30vh;
+  min-width: 67%;
+  background-color: white;
+  box-shadow: 5px 18px 25px 1px rgba(66, 68, 90, 1);
 }
 
 label {
-width: 80%;
+  width: 80%;
 }
 
-.col1, .col2 {
-    width: 30%;
-    padding: 30px;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.col1,
+.col2 {
+  width: 30%;
+  padding: 30px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .columns {
-   font-size: 14px;
+  font-size: 14px;
 }
 
 input {
-    width: 100%;
+  width: 100%;
 }
 
 .columns {
-    display: flex;
+  display: flex;
 }
 
 button {
-color: white;
+  color: white;
   width: 150px;
   padding: 10px;
   border-radius: 10px;
@@ -113,50 +114,43 @@ color: white;
 }
 
 .button {
-    position: absolute;
-    top: 80vh;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-left: 30px;
+  position: absolute;
+  top: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 30px;
 }
 
-/* .button {
-    position: relative;
-    top: 500px;
-    outline: 3px solid red;
-    margin-left: 30px;
-    /* margin-top: 50px; */ */
-} */
-
 button:hover {
-    background-color: yellow;
-    color: black;
+  background-color: yellow;
+  color: black;
 }
 
 button:active {
-    background-color: red;
+  background-color: red;
 }
 
 input:focus {
-    background-color: hsl(0, 13%, 94%);
-    outline: 1px solid blue;
+  background-color: hsl(0, 13%, 94%);
+  outline: 1px solid blue;
 }
 
 input:valid {
-    outline: 1px solid green;
+  outline: 1px solid green;
 }
 
-#ruleError, #matchError {
-    display: none;
-    color: red;
-    font-size: 0.8rem;
+#ruleError,
+#matchError {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
 }
 
 .error {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 #success {
-    color: green;
+  color: green;
 }
